@@ -1,0 +1,12 @@
+#cloud-config
+
+users:
+  - name: sahil 
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    lock_passwd: false
+    passwd: $6$99Bifq18FTXGUKqP$ptE.EFPDh06JJ0Gzqc458Gyj/MhpPQzJJcB6rER22t3xPLjrCmoRbfRV/z3HddU5SbBX.paWAw2ojjZoesL7G1 # sahil 
+    groups: users, admin
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINhoKKIrxAliMPqpduCDhIWkDFb6Jtt7zjX8J6aNDTWA sahilss2652@gmail.com
+
