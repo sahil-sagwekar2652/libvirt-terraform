@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     libvirt = {
-      source = "dmacvicar/libvirt"
+      source  = "dmacvicar/libvirt"
       version = "0.7.6"
     }
   }
@@ -9,6 +9,5 @@ terraform {
 
 provider "libvirt" {
   # Configuration options
-  alias = "archbox"
-  uri = "qemu+ssh://pc/system"
+  uri = "qemu+ssh://sahil@192.168.1.205/system"
 }
