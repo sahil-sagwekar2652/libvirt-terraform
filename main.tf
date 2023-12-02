@@ -9,5 +9,6 @@ terraform {
 
 provider "libvirt" {
   # Configuration options
-  uri = "qemu+ssh://sahil@192.168.1.205/system"
+  uri = "qemu+ssh://sahil@100.118.6.130/system"
 }
+	

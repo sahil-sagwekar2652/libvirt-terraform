@@ -2,7 +2,8 @@
 resource "libvirt_volume" "debian-qcow2" {
   name   = "debian.qcow2"
   pool   = "default" # List storage pools using virsh pool-list
-  source = "https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.qcow2"
+#   source = "https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.qcow2"
+  source = "/home/sahil/Downloads/debian-11-generic-amd64.qcow2"
   format = "qcow2"
 }
 
@@ -28,6 +29,7 @@ resource "libvirt_domain" "debian" {
 
   disk {
     volume_id = libvirt_volume.debian-qcow2.id
+    # file = "/var/lib/libvirt/images/debian-11-generic-amd64.qcow2"
   }
 
   cloudinit = libvirt_cloudinit_disk.commoninit.id

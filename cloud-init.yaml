@@ -1,12 +1,12 @@
 #cloud-config
 
 users:
-  - name: sahil 
+  - name: sahil
     sudo: ALL=(ALL) NOPASSWD:ALL
     lock_passwd: false
-    passwd: $6$99Bifq18FTXGUKqP$ptE.EFPDh06JJ0Gzqc458Gyj/MhpPQzJJcB6rER22t3xPLjrCmoRbfRV/z3HddU5SbBX.paWAw2ojjZoesL7G1 # sahil 
+    passwd: $6$99Bifq18FTXGUKqP$ptE.EFPDh06JJ0Gzqc458Gyj/MhpPQzJJcB6rER22t3xPLjrCmoRbfRV/z3HddU5SbBX.paWAw2ojjZoesL7G1 # sahil
     groups: users, admin
     shell: /bin/bash
     ssh_authorized_keys:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINhoKKIrxAliMPqpduCDhIWkDFb6Jtt7zjX8J6aNDTWA sahilss2652@gmail.com
-
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCpUKK3l7byjXu8N+PtEczNZpbD+peoFsGFszaImnCAYHF+Rh7vFv5/lmujUGFapO+LYQ+E4zmVjX+HwAo1253kFTgxoughT0gGEmeb9i73U6VzysHy7bhF6oidAC3h1zcZ+7j4oi5bXya4rma+E5q2cyOdQ1JI++sNeQPTxD5hVg6LG+FQ3tg/Tg17Z0jef4H7re434KsXDOszzeLQHz/QZdTvZSsxLmPhsfbqKChSwweNHoV86xhVGgCIEjdSUEsuy8UeSEjMkVM937u4c6S6Ek5a8TOKqHtC0ZYMK3OqHZz1yHF1jfarObMzYULXxGtAZTUWhXEnBGAUTMfm0M7Y4ZJQeuA/4DJ6BUZp5TVQayExHASyIZl+yN64NkP7bEpLM0HV/6YRWFTRz7YmpNeQxrnAISLDZXLzcuqySDFmy/FVaN++VXRm8pFuSSmq5pZgpKwKm3NxcaXtQss52YqyGdq01m7pktBliAP60lUI4e57KsIq4t6CS3LM0YyJYsSZFKW7tEgzJd4il4/8eujHof7DgajlZC4iKaf6BCKLcl0eLM9Wg/HQ9BFBsAmJIyO+xIkRBZQvfG+ymrPvwcdJGocJuyK/jUl6mzvkPM3yXLwZbloJyKVEvn18GqWwurlIauVBTYZ/OETn8U5cEydcC/LDjPRxkZTKTZHv6ORT/w== sahilss2652@gmail.com
