@@ -3,6 +3,12 @@
 Because you can't be using VirtualBox on Linux in 2024.
 
 - Read through the `cloud-init.yaml`
+- The default username and sudo password is 'sahil'.
+- You can generate the hashed password using the following command -
+  ```bash
+   echo -n 'password' | openssl passwd -6 -stdin
+  ```
+  Replace `'password'` with your desired password.
 - The output will give an error after `terraform apply`, possibly because the VM isn't completely setup yet, however running `terraform output` again should print the IP address of the VM.
 
 ![](https://octetz.s3.us-east-2.amazonaws.com/running-a-minimal-hypervisor/kvm-stack.png)
